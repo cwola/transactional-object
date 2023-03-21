@@ -1,0 +1,36 @@
+{
+  "name": "@cwola/transactional-object",
+  "version": "0.0.1",
+  "description": "object transactions.",
+  "main": "src/transactionalObject",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --ext js --quiet ./src/*",
+    "test": "node ./test/test.js"
+  },
+  "author": "r-jimbo",
+  "keywords": [
+    "cwola",
+    "object",
+    "transaction"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwola/transactional-object.git"
+  },
+  "exports": {
+    "import": "./src/transactionalObject.mjs",
+    "require": "./src/transactionalObject.cjs"
+  },
+  "dependencies": {
+    "object-rollback": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.19.0",
+    "eslint-config-google": "0.14.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
